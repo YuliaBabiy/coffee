@@ -524,7 +524,7 @@ h6 {
 }
 body {
   margin: 0;
-  background-image: url("/img/background.jpg");
+  background-image: url("img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
