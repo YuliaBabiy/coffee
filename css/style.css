@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -518,10 +519,6 @@ h6 {
   padding: 0px 25px;
 }
 
-@font-face {
-  font-family: Karla;
-  src: url(fonts/Karla.zip);
-}
 body {
   margin: 0;
   background-image: url("../img/background.jpg");
@@ -529,10 +526,10 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
-  font-family: Karla, sans-serif;
-  font-size: 16px;
   line-height: 28px;
   font-weight: 400;
+  font-family: Karla, sans-serif;
+  font-size: 16px;
 }
 
 .background-container {

@@ -8,12 +8,7 @@
 @import "subscribe.scss";
 @import "footer.scss";
 @import "templates.scss";
-
-
-@font-face {
-  font-family: Karla;
-  src: url(fonts/Karla.zip);
-}
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 body {
   margin: 0;
@@ -22,16 +17,15 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: 50% 50%;
-  font-family: Karla, sans-serif;
-  font-size: 16px;
   line-height: 28px;
   font-weight: 400;
+  font-family: Karla, sans-serif;
+  font-size: 16px;
 }
 
 .background-container {
   background-color: white;
   overflow: hidden;
-
 }
 
 .container {
@@ -48,7 +42,7 @@ body {
   height: 54px;
   width: 230px;
   background-color: #FFFF;
-  
+
   @extend %text-style;
 }
 
@@ -60,8 +54,6 @@ body {
   @extend %text-style;
 }
 
-
 .transparent-block {
   height: 340px;
 }
-
