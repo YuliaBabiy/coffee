@@ -1,0 +1,33 @@
+@import "templates.scss";
+
+.article {
+  @extend %flex-center;
+
+  &__wrapper {
+    height: 553px;
+    margin: 0px 0px 50px 0px;
+  }
+
+  &__img {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  & a {
+    font-size: 20px;
+    line-height: 32px;
+    font-family: Karla, sans-serif;
+  }
+
+  & p {
+    margin: 20px 0;
+
+    @extend %paragraph-color;
+  }
+
+  & .label {
+    margin: 0;
+    text-align: left;
+  }
+}
+

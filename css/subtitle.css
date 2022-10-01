@@ -1,0 +1,25 @@
+.content__paragraph {
+  color: rgba(29, 31, 46, 0.7);
+}
+
+.content {
+  display: block;
+  max-width: 634px;
+  margin: 100px auto;
+  text-align: center;
+}
+.content__title {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.content__paragraph {
+  margin-bottom: 25px;
+}
+.content__link {
+  color: #a25f4b;
+  border-bottom: 2px solid rgba(162, 95, 75, 0.2);
+  line-height: 28px;
+}

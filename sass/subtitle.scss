@@ -1,0 +1,27 @@
+@import "templates.scss";
+
+.content {
+  display: block;
+  max-width: 634px;
+  margin: 100px auto;
+  text-align: center;
+
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+
+  &__paragraph {
+    @extend %paragraph-color;
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    color: #a25f4b;
+    border-bottom: 2px solid rgba(162, 95, 75, 0.2);
+    line-height: 28px;
+  }
+}

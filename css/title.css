@@ -1,0 +1,30 @@
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  align-items: center;
+  min-height: 530px;
+  max-width: 1440px;
+  color: white;
+  padding: 0px 30px;
+  background-image: linear-gradient(180deg, rgba(5, 8, 39, 0.4), rgba(5, 8, 39, 0.4)), url("/img/title-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto, cover;
+}
+.title .title__wrapper {
+  text-align: center;
+}
+.title .title__wrapper .label {
+  margin: 30px 0;
+  color: white;
+}
+.title .title__wrapper h1 {
+  font-size: 48px;
+  line-height: 60px;
+}
+.title .title__wrapper p, .title .title__wrapper h1 {
+  margin-bottom: 30px;
+}

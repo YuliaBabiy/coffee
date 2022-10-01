@@ -1,0 +1,51 @@
+.magazine {
+  display: flex;
+  justify-content: center;
+}
+
+.magazine__section {
+  margin: 0px 0px 100px 0px;
+}
+.magazine__img {
+  height: 280px;
+}
+.magazine__small-img img {
+  height: 130px;
+}
+.magazine__mug-hand {
+  margin-bottom: 20px;
+}
+.magazine__details {
+  margin: 0 0 0 60px;
+  padding-top: 20px;
+  text-align: left;
+}
+.magazine__details h2 {
+  font-size: 34px;
+  margin: 10px 0 15px;
+  line-height: 50px;
+}
+.magazine__details p {
+  margin-bottom: 15px;
+  color: rgba(29, 31, 46, 0.7);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.magazine__details .btn {
+  background-color: #1d1f2e;
+  color: white;
+}
+.magazine .label {
+  margin: 0;
+  text-align: left;
+}
+@media screen and (max-width: 991px) {
+  .magazine__details {
+    margin: 0;
+    text-align: center;
+  }
+  .magazine .label {
+    text-align: center;
+  }
+}

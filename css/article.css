@@ -1,0 +1,29 @@
+.article {
+  display: flex;
+  justify-content: center;
+}
+
+.article p {
+  color: rgba(29, 31, 46, 0.7);
+}
+
+.article__wrapper {
+  height: 553px;
+  margin: 0px 0px 50px 0px;
+}
+.article__img {
+  height: 300px;
+  margin-bottom: 20px;
+}
+.article a {
+  font-size: 20px;
+  line-height: 32px;
+  font-family: Karla, sans-serif;
+}
+.article p {
+  margin: 20px 0;
+}
+.article .label {
+  margin: 0;
+  text-align: left;
+}

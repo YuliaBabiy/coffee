@@ -1,0 +1,66 @@
+@import "templates.scss";
+
+.magazine {
+  @extend %flex-center;
+
+  &__section {
+    margin: 0px 0px 100px 0px;
+  }
+
+  &__img {
+    height: 280px;
+  }
+
+  &__small-img {
+
+    img {
+      height: 130px;
+    }
+  }
+
+  &__mug-hand {
+    margin-bottom: 20px;
+  }
+
+  &__details {
+    margin: 0 0 0 60px;
+    padding-top: 20px;
+    text-align: left;
+
+    h2 {
+      font-size: 34px;
+      margin: 10px 0 15px;
+      line-height: 50px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: rgba(29, 31, 46, 0.7);
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 400;
+    }
+
+    & .btn {
+      background-color: #1d1f2e;
+      color: #FFFF;
+    }
+  }
+
+  & .label {
+    margin: 0;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 991px) {
+    &__details {
+      margin: 0;
+      text-align: center;
+    }
+
+    & .label {
+      text-align: center;
+    }
+  }
+}
+

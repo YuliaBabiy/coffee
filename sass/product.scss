@@ -1,0 +1,49 @@
+@import "templates.scss";
+
+.product {
+  height: 657px;
+
+  &__img-container {
+    height: 540px;
+  }
+
+  &__details {
+    text-align: center;
+    margin: 30px auto;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: Karla, sans-serif;
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    font-size: 16px;
+    color: rgba(29, 31, 46, 0.7);
+
+    span {
+      text-decoration: line-through;
+      font-size: 13px;
+    }
+  }
+}
+
+.more-products {
+  margin: 0px 0px 100px 0px;
+
+  .flex-center {
+    @extend %flex-center;
+  }
+
+  &__content {
+    height: 497px;
+    margin: 0px 0px 50px 0px;
+  }
+  
+  &__img {
+    height: 380px;
+  }
+}

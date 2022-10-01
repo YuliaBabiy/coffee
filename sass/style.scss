@@ -1,0 +1,67 @@
+@import "nullstyle.scss";
+@import "header.scss";
+@import "title.scss";
+@import "subtitle.scss";
+@import "product.scss";
+@import "magazine.scss";
+@import "article.scss";
+@import "subscribe.scss";
+@import "footer.scss";
+@import "templates.scss";
+
+
+@font-face {
+  font-family: Karla;
+  src: url(fonts/Karla.zip);
+}
+
+body {
+  margin: 0;
+  background-image: url('/img/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  font-family: Karla, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.background-container {
+  background-color: white;
+  overflow: hidden;
+
+}
+
+.container {
+  max-width: 940px;
+}
+
+.block {
+  border: 1px solid grey;
+  height: 100%;
+  text-align: center;
+}
+
+.btn {
+  height: 54px;
+  width: 230px;
+  background-color: #FFFF;
+  
+  @extend %text-style;
+}
+
+.label {
+  text-align: center;
+  margin: 100px 0px 100px 0px;
+  color: rgba(29, 31, 46, 0.7);
+
+  @extend %text-style;
+}
+
+
+.transparent-block {
+  height: 340px;
+}
+
