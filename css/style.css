@@ -44,7 +44,7 @@ h6 {
   font-weight: inherit;
 }
 
-.article, .magazine, .more-products .flex-center, .title {
+.article, .magazine, .title {
   display: flex;
   justify-content: center;
 }
@@ -65,6 +65,27 @@ h6 {
   padding: 0px 25px;
 }
 
+@-webkit-keyframes nav-underline {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes nav-underline {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -74,18 +95,44 @@ h6 {
 .header__logo img {
   height: 24px;
   width: 112px;
+  transition: all 0.5s linear 0s;
+  cursor: pointer;
+}
+.header__logo img:hover {
+  opacity: 0.7;
 }
 .header__nav {
   display: flex;
+  gap: 30px;
   margin-left: 17px;
 }
 .header__nav-item {
-  margin-right: 30px;
   opacity: 0.5;
+  transition: all 0.5s linear 0s;
+}
+.header__nav-item:hover {
+  opacity: 1;
+}
+.header__nav li:hover .nav-border {
+  -webkit-animation-name: nav-underline;
+          animation-name: nav-underline;
+}
+.header__nav .nav-border {
+  height: 2px;
+  width: 0;
+  background-color: brown;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 .header__cart {
   display: flex;
   align-items: center;
+  transition: all 0.5s linear 0s;
+  cursor: pointer;
 }
 .header__cart-svg {
   height: 20px;
@@ -96,13 +143,17 @@ h6 {
   margin-right: 10px;
   color: #1d1f2e;
 }
+.header__cart:hover {
+  opacity: 0.7;
+}
 .header__amount {
   height: 20px;
   width: 20px;
   color: white;
   background-color: #1d1f2e;
   border-radius: 50%;
-  padding: 1px 0px;
+  padding-left: 1px;
+  padding-top: 2px;
   text-align: center;
 }
 .header__burger {
@@ -123,7 +174,7 @@ h6 {
   }
 }
 
-.article, .magazine, .more-products .flex-center, .title {
+.article, .magazine, .title {
   display: flex;
   justify-content: center;
 }
@@ -170,7 +221,7 @@ h6 {
   margin-bottom: 30px;
 }
 
-.article, .magazine, .more-products .flex-center, .title {
+.article, .magazine, .title {
   display: flex;
   justify-content: center;
 }
@@ -213,7 +264,7 @@ h6 {
   line-height: 28px;
 }
 
-.article, .magazine, .more-products .flex-center, .title {
+.article, .magazine, .title {
   display: flex;
   justify-content: center;
 }
@@ -234,11 +285,39 @@ h6 {
   padding: 0px 25px;
 }
 
-.product {
-  height: 657px;
+.product.big .product__img-container {
+  height: 540px;
 }
 .product__img-container {
-  height: 540px;
+  height: 380px;
+  position: relative;
+  cursor: pointer;
+}
+.product__img-container img {
+  position: absolute;
+}
+.product__img-container .btn {
+  position: absolute;
+  width: 93%;
+  bottom: 5px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+.product__img-container .product__background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(56, 56, 56, 0.3);
+  transition: 0.5s;
+  opacity: 0;
+}
+.product__img-container:hover .product__background {
+  opacity: 1;
+}
+.product__img-container:hover .btn {
+  bottom: 15px;
 }
 .product__details {
   text-align: center;
@@ -260,18 +339,7 @@ h6 {
   font-size: 13px;
 }
 
-.more-products {
-  margin: 0px 0px 100px 0px;
-}
-.more-products__content {
-  height: 497px;
-  margin: 0px 0px 50px 0px;
-}
-.more-products__img {
-  height: 380px;
-}
-
-.article, .magazine, .title, .more-products .flex-center {
+.article, .magazine, .title {
   display: flex;
   justify-content: center;
 }
@@ -339,7 +407,7 @@ h6 {
   }
 }
 
-.article, .title, .more-products .flex-center, .magazine {
+.article, .title, .magazine {
   display: flex;
   justify-content: center;
 }
@@ -381,7 +449,7 @@ h6 {
   text-align: left;
 }
 
-.title, .more-products .flex-center, .magazine, .article {
+.title, .magazine, .article {
   display: flex;
   justify-content: center;
 }
@@ -403,7 +471,6 @@ h6 {
 }
 
 .subscribe {
-  height: 327px;
   padding: 0px 30px;
   border: 1px solid gray;
   margin: 0px auto 100px;
@@ -445,7 +512,6 @@ h6 {
 }
 
 .footer__wrapper {
-  height: 204px;
   margin: 0px 0px 100px 0px;
 }
 
@@ -498,7 +564,7 @@ h6 {
   margin-bottom: 5px;
 }
 
-.title, .more-products .flex-center, .magazine, .article {
+.title, .magazine, .article {
   display: flex;
   justify-content: center;
 }
@@ -551,6 +617,7 @@ body {
   height: 54px;
   width: 230px;
   background-color: white;
+  cursor: pointer;
 }
 
 .label {
@@ -561,4 +628,15 @@ body {
 
 .transparent-block {
   height: 340px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }

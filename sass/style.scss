@@ -42,6 +42,7 @@ body {
   height: 54px;
   width: 230px;
   background-color: #FFFF;
+  cursor: pointer;
 
   @extend %text-style;
 }
@@ -56,4 +57,15 @@ body {
 
 .transparent-block {
   height: 340px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }

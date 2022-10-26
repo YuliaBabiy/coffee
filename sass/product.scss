@@ -1,10 +1,48 @@
 @import "templates.scss";
 
 .product {
-  height: 657px;
+  &.big {
+    .product__img-container {
+      height: 540px;
+    }
+  }
 
   &__img-container {
-    height: 540px;
+    height: 380px;
+    position: relative;
+    cursor: pointer;
+
+    img {
+      position: absolute;
+    }
+
+    .btn {
+      position: absolute;
+      width: 93%;
+      bottom: 5px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      transition: .5s;
+    }
+
+    .product__background {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(56, 56, 56, .3);
+      transition: .5s;
+      opacity: 0;
+    }
+
+    &:hover {
+      .product__background {
+        opacity: 1;
+      }
+      .btn {
+        bottom: 15px;
+      }
+    }
   }
 
   &__details {
@@ -28,22 +66,5 @@
       text-decoration: line-through;
       font-size: 13px;
     }
-  }
-}
-
-.more-products {
-  margin: 0px 0px 100px 0px;
-
-  .flex-center {
-    @extend %flex-center;
-  }
-
-  &__content {
-    height: 497px;
-    margin: 0px 0px 50px 0px;
-  }
-  
-  &__img {
-    height: 380px;
   }
 }
