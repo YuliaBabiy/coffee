@@ -148,7 +148,7 @@ h6 {
 }
 .header__amount {
   height: 20px;
-  width: 20px;
+  min-width: 20px;
   color: white;
   background-color: #1d1f2e;
   border-radius: 50%;
@@ -197,7 +197,7 @@ h6 {
 
 .title {
   align-items: center;
-  min-height: 530px;
+  height: calc(100vh - 80px);
   max-width: 1440px;
   color: white;
   padding: 0px 30px;

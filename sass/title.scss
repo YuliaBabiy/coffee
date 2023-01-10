@@ -3,7 +3,7 @@
 .title {
   @extend %flex-center;
   align-items: center;
-  min-height: 530px;
+  height: calc(100vh - 80px);
   max-width: 1440px;
   color: white;
   padding: 0px 30px;
